@@ -1,0 +1,52 @@
+\renewcommand\sfdefault{phv}
+\renewcommand\familydefault{\sfdefault}
+\usetheme{default}
+\usepackage{color}
+\useoutertheme{default}
+\usepackage{texnansi}
+\usepackage{marvosym}
+\usepackage{tikzpagenodes}
+\usepackage{transparent}
+
+%\definecolor{bottomcolour}{rgb}{0.32,0.3,0.38}
+\definecolor{bottomcolour}{rgb}{1.0,1.0,1.0}
+\definecolor{middlecolour}{rgb}{0.25,0.25,0.25}
+\definecolor{topcolour}{rgb}{0.56,0.61,0.67}
+\definecolor{textcolour}{rgb}
+{0.0,0.0,0.0}
+\definecolor{azulmarino}{rgb}
+{0.0,0.15,0.31}
+\definecolor{graydown}{rgb}
+{0.62,0.66,0.72}
+\setbeamerfont{title}{size=\Huge}
+\setbeamercolor{structure}{fg=azulmarino}
+\setbeamercolor{palette quaternary}{bg=graydown,fg=azulmarino} % left bottom
+
+\setbeamertemplate{frametitle}[default]%[center]
+\setbeamercolor{normal text}{bg=azulmarino, fg=azulmarino}
+%\setbeamertemplate{background canvas}[vertical shading]
+%[bottom=bottomcolour, middle=middlecolour, top=topcolour]
+\setbeamertemplate{background canvas}[vertical shading]
+[bottom=bottomcolour, top=topcolour]
+\setbeamertemplate{items}[circle]
+\setbeamerfont{frametitle}{size=\huge}
+\setbeamertemplate{navigation symbols}{} %no nav symbols
+
+\usepackage{background}
+\backgroundsetup{
+    placement=bottom,
+    scale=1,
+    contents={
+%    \begin{tikzpicture}[remember picture,overlay]
+%            \node[opacity=0.1, rotate=0] at (current page.center) {\includegraphics[scale=0.25]{logoUMAtransparente.png}};          
+%        \end{tikzpicture}
+%        },
+    {\transparent{0.4}\includegraphics[scale=0.5]{logoUMAtransparente.png}};
+    },          
+    opacity=0.1,
+    angle=30,
+    hshift=150,
+    vshift=-90
+}
+\setbeamertemplate{background}{\BgMaterial}
+
